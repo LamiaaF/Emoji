@@ -17,12 +17,8 @@
 		6356A0182A60562C00FEFB8A /* EmojiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6356A0162A60562C00FEFB8A /* EmojiTableViewCell.xib */; };
 		6356A01A2A605BC900FEFB8A /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356A0192A605BC900FEFB8A /* EmojiViewController.swift */; };
 		6356A01C2A605C8E00FEFB8A /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356A01B2A605C8E00FEFB8A /* Emoji.swift */; };
-		6356A0222A618F6B00FEFB8A /* HappyEmojiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356A0202A618F6B00FEFB8A /* HappyEmojiVC.swift */; };
-		6356A0232A618F6B00FEFB8A /* HappyEmojiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6356A0212A618F6B00FEFB8A /* HappyEmojiVC.xib */; };
-		6356A0272A6194D600FEFB8A /* GlassesEmojiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356A0252A6194D600FEFB8A /* GlassesEmojiVC.swift */; };
-		6356A0282A6194D600FEFB8A /* GlassesEmojiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6356A0262A6194D600FEFB8A /* GlassesEmojiVC.xib */; };
-		6356A02C2A6194FF00FEFB8A /* ThinkingEmojiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356A02A2A6194FF00FEFB8A /* ThinkingEmojiVC.swift */; };
-		6356A02D2A6194FF00FEFB8A /* ThinkingEmojiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6356A02B2A6194FF00FEFB8A /* ThinkingEmojiVC.xib */; };
+		6356A0302A6597A900FEFB8A /* EmojiDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356A02E2A6597A900FEFB8A /* EmojiDetailsViewController.swift */; };
+		6356A0312A6597A900FEFB8A /* EmojiDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6356A02F2A6597A900FEFB8A /* EmojiDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +34,8 @@
 		6356A0162A60562C00FEFB8A /* EmojiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiTableViewCell.xib; sourceTree = "<group>"; };
 		6356A0192A605BC900FEFB8A /* EmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
 		6356A01B2A605C8E00FEFB8A /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
-		6356A0202A618F6B00FEFB8A /* HappyEmojiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyEmojiVC.swift; sourceTree = "<group>"; };
-		6356A0212A618F6B00FEFB8A /* HappyEmojiVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HappyEmojiVC.xib; sourceTree = "<group>"; };
-		6356A0252A6194D600FEFB8A /* GlassesEmojiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesEmojiVC.swift; sourceTree = "<group>"; };
-		6356A0262A6194D600FEFB8A /* GlassesEmojiVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlassesEmojiVC.xib; sourceTree = "<group>"; };
-		6356A02A2A6194FF00FEFB8A /* ThinkingEmojiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkingEmojiVC.swift; sourceTree = "<group>"; };
-		6356A02B2A6194FF00FEFB8A /* ThinkingEmojiVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThinkingEmojiVC.xib; sourceTree = "<group>"; };
+		6356A02E2A6597A900FEFB8A /* EmojiDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailsViewController.swift; sourceTree = "<group>"; };
+		6356A02F2A6597A900FEFB8A /* EmojiDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,39 +102,11 @@
 		6356A0122A60559100FEFB8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6356A0292A6194DE00FEFB8A /* ThinkingVC */,
-				6356A0242A6194B400FEFB8A /* GlassesVC */,
-				6356A01F2A618F4A00FEFB8A /* HappyVC */,
 				6356A0192A605BC900FEFB8A /* EmojiViewController.swift */,
+				6356A02E2A6597A900FEFB8A /* EmojiDetailsViewController.swift */,
+				6356A02F2A6597A900FEFB8A /* EmojiDetailsViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		6356A01F2A618F4A00FEFB8A /* HappyVC */ = {
-			isa = PBXGroup;
-			children = (
-				6356A0202A618F6B00FEFB8A /* HappyEmojiVC.swift */,
-				6356A0212A618F6B00FEFB8A /* HappyEmojiVC.xib */,
-			);
-			path = HappyVC;
-			sourceTree = "<group>";
-		};
-		6356A0242A6194B400FEFB8A /* GlassesVC */ = {
-			isa = PBXGroup;
-			children = (
-				6356A0252A6194D600FEFB8A /* GlassesEmojiVC.swift */,
-				6356A0262A6194D600FEFB8A /* GlassesEmojiVC.xib */,
-			);
-			path = GlassesVC;
-			sourceTree = "<group>";
-		};
-		6356A0292A6194DE00FEFB8A /* ThinkingVC */ = {
-			isa = PBXGroup;
-			children = (
-				6356A02A2A6194FF00FEFB8A /* ThinkingEmojiVC.swift */,
-				6356A02B2A6194FF00FEFB8A /* ThinkingEmojiVC.xib */,
-			);
-			path = ThinkingVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,12 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6356A0092A604BE700FEFB8A /* LaunchScreen.storyboard in Resources */,
-				6356A02D2A6194FF00FEFB8A /* ThinkingEmojiVC.xib in Resources */,
 				6356A0062A604BE700FEFB8A /* Assets.xcassets in Resources */,
-				6356A0232A618F6B00FEFB8A /* HappyEmojiVC.xib in Resources */,
 				6356A0182A60562C00FEFB8A /* EmojiTableViewCell.xib in Resources */,
+				6356A0312A6597A900FEFB8A /* EmojiDetailsViewController.xib in Resources */,
 				6356A0042A604BE600FEFB8A /* Main.storyboard in Resources */,
-				6356A0282A6194D600FEFB8A /* GlassesEmojiVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,14 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6356A02C2A6194FF00FEFB8A /* ThinkingEmojiVC.swift in Sources */,
 				6356A01C2A605C8E00FEFB8A /* Emoji.swift in Sources */,
+				6356A0302A6597A900FEFB8A /* EmojiDetailsViewController.swift in Sources */,
 				6356A0012A604BE600FEFB8A /* ViewController.swift in Sources */,
 				6356A01A2A605BC900FEFB8A /* EmojiViewController.swift in Sources */,
-				6356A0222A618F6B00FEFB8A /* HappyEmojiVC.swift in Sources */,
 				63569FFD2A604BE600FEFB8A /* AppDelegate.swift in Sources */,
 				6356A0172A60562C00FEFB8A /* EmojiTableViewCell.swift in Sources */,
-				6356A0272A6194D600FEFB8A /* GlassesEmojiVC.swift in Sources */,
 				63569FFF2A604BE600FEFB8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

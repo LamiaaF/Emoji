@@ -32,7 +32,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JRQ-Li-44a"/>
                     <connections>
-                        <outlet property="table" destination="LLs-A0-7Qf" id="Ev7-Wb-VeW"/>
+                        <outlet property="tableView" destination="LLs-A0-7Qf" id="cmE-7j-cor"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

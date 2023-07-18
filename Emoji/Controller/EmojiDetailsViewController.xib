@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HappyEmojiVC" customModule="Emoji" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmojiDetailsViewController" customModule="Emoji" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMB-W1-wB5">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-6j-8HH">
                     <rect key="frame" x="124.66666666666669" y="408.66666666666669" width="144" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Add to favorites">
@@ -28,25 +28,25 @@
                         <color key="baseForegroundColor" systemColor="labelColor"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="addToFavoritesButtonTapped:" destination="-1" eventType="touchUpInside" id="Jb7-Sk-uDT"/>
+                        <action selector="favoriteButton:" destination="-1" eventType="touchUpInside" id="hAf-w9-8H5"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="EMB-W1-wB5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="89b-KR-6xM"/>
-                <constraint firstItem="EMB-W1-wB5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yQq-Hk-iQV"/>
+                <constraint firstItem="Vlt-6j-8HH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3mk-DO-AsW"/>
+                <constraint firstItem="Vlt-6j-8HH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Che-VU-UNG"/>
             </constraints>
-            <point key="canvasLocation" x="21" y="20"/>
+            <point key="canvasLocation" x="36" y="20"/>
         </view>
     </objects>
     <resources>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
