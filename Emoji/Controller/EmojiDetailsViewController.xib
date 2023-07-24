@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmojiDetailsViewController" customModule="Emoji" customModuleProvider="target">
             <connections>
+                <outlet property="characterLabel" destination="w5g-UX-xbu" id="5Hs-FW-vhT"/>
+                <outlet property="groupeLabel" destination="NTF-Gg-97G" id="e8d-b0-02r"/>
+                <outlet property="slugLabel" destination="aeS-ry-9rD" id="1nO-kf-4bA"/>
+                <outlet property="subGroupeLabel" destination="KnQ-uo-VVG" id="BvQ-1G-S6R"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-6j-8HH">
-                    <rect key="frame" x="124.66666666666669" y="408.66666666666669" width="144" height="35"/>
+                    <rect key="frame" x="124.66666666666669" y="409" width="144" height="34.333333333333314"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Add to favorites">
                         <backgroundConfiguration key="background">
@@ -31,12 +35,43 @@
                         <action selector="favoriteButton:" destination="-1" eventType="touchUpInside" id="hAf-w9-8H5"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-OI-UcH">
+                    <rect key="frame" x="176" y="138.66666666666663" width="41.333333333333343" height="141.33333333333337"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-ry-9rD">
+                            <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5g-UX-xbu">
+                            <rect key="frame" x="0.0" y="40.333333333333343" width="41.333333333333336" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTF-Gg-97G">
+                            <rect key="frame" x="0.0" y="80.666666666666686" width="41.333333333333336" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-uo-VVG">
+                            <rect key="frame" x="0.0" y="121.00000000000001" width="41.333333333333336" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Vlt-6j-8HH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3mk-DO-AsW"/>
                 <constraint firstItem="Vlt-6j-8HH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Che-VU-UNG"/>
+                <constraint firstItem="Wdo-OI-UcH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rwa-Vq-elb"/>
+                <constraint firstItem="Vlt-6j-8HH" firstAttribute="top" secondItem="Wdo-OI-UcH" secondAttribute="bottom" constant="128.66999999999999" id="hYh-z0-ras"/>
             </constraints>
             <point key="canvasLocation" x="36" y="20"/>
         </view>
