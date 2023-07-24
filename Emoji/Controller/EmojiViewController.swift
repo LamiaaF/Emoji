@@ -45,8 +45,8 @@ extension EmojiViewController : UITableViewDelegate{
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let newVC = EmojiDetailsViewController()
             newVC.delegate = self // Set the delegate to self
-            let selectedEmojiType = apiResult[indexPath.row]
-            newVC.selectedEmojiType = selectedEmojiType
+            let selectedEmojiType = emojiTypeViewModels[indexPath.row]
+            newVC.emojiTypeViewModels = selectedEmojiType
             self.navigationController?.pushViewController(newVC, animated: true)
         }
     }
@@ -90,15 +90,11 @@ extension EmojiViewController : UITableViewDataSource {
 
     
     // ...  code ...
+//
 extension EmojiViewController: EmojiDetailsViewControllerDelegate {
     func didAddFavorite(emojiTypeViewModel: EmojiTypeViewModel) {
-           if let index = emojiTypeViewModels.firstIndex(where: { $0.title == emojiTypeViewModel.title }) {
-               emojiTypeViewModels[index].isFavorite.toggle()
-               tableView.reloadData()
-           }
-    }
-    
-}
-    
-        
-
+        if let index = emojiTypeViewModels.firstIndex(where: { $0.title == emojiTypeViewModel.title }) {
+            emojiTypeViewModels[index].isFavorite.toggle()
+            tableView.reloadData()
+        }
+    }}

@@ -12,7 +12,7 @@ struct EmojiTypeViewModel {
     let emoji: String
     let desc: String
     let groupType: String
-    var isFavorite = false
+    var isFavorite: Bool
     
     init(model: EmojiType) {
         self.title = model.slug

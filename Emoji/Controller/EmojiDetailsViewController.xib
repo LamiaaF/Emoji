@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmojiDetailsViewController" customModule="Emoji" customModuleProvider="target">
             <connections>
                 <outlet property="characterLabel" destination="w5g-UX-xbu" id="5Hs-FW-vhT"/>
+                <outlet property="favoriteButton" destination="Vlt-6j-8HH" id="ckM-BE-Qr9"/>
                 <outlet property="groupeLabel" destination="NTF-Gg-97G" id="e8d-b0-02r"/>
                 <outlet property="slugLabel" destination="aeS-ry-9rD" id="1nO-kf-4bA"/>
                 <outlet property="subGroupeLabel" destination="KnQ-uo-VVG" id="BvQ-1G-S6R"/>
@@ -23,20 +24,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-6j-8HH">
-                    <rect key="frame" x="124.66666666666669" y="409" width="144" height="34.333333333333314"/>
+                    <rect key="frame" x="184.66666666666666" y="419" width="24" height="14"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Add to favorites">
+                    <buttonConfiguration key="configuration" style="plain">
                         <backgroundConfiguration key="background">
                             <color key="strokeColor" systemColor="labelColor"/>
                         </backgroundConfiguration>
-                        <color key="baseForegroundColor" systemColor="labelColor"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="favoriteButton:" destination="-1" eventType="touchUpInside" id="hAf-w9-8H5"/>
+                        <action selector="didTapFavoriteButton:" destination="-1" eventType="touchUpInside" id="6G9-Mu-f7d"/>
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-OI-UcH">
-                    <rect key="frame" x="176" y="138.66666666666663" width="41.333333333333343" height="141.33333333333337"/>
+                    <rect key="frame" x="176" y="149" width="41.333333333333343" height="141.33333333333337"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-ry-9rD">
                             <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -51,13 +51,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTF-Gg-97G">
-                            <rect key="frame" x="0.0" y="80.666666666666686" width="41.333333333333336" height="20.333333333333329"/>
+                            <rect key="frame" x="0.0" y="80.666666666666657" width="41.333333333333336" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-uo-VVG">
-                            <rect key="frame" x="0.0" y="121.00000000000001" width="41.333333333333336" height="20.333333333333329"/>
+                            <rect key="frame" x="0.0" y="120.99999999999999" width="41.333333333333336" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
